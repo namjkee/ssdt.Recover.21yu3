@@ -1,0 +1,8 @@
+TARGETNAME=shadow
+TARGETTYPE=DRIVER
+TARGETPATH=obj
+TARGETLIBS=advapihook.lib
+
+INCLUDES=.\
+
+SOURCES = shadow.c

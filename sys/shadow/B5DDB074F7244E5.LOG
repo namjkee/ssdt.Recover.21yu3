@@ -1,0 +1,11 @@
+00000000	0.00000000	PsLookupProcessByProcessId()	
+00000001	34.05120468	[shadow] ssdtshadow_ntoskrnl.exe: 8055A640	
+00000002	34.05121613	[shadow] ssdtshadow_win32k.sys_addr: 8055A650	
+00000003	34.05122757	[shadow] ssdtshadow_win32k.sys_base: BF999280	
+00000004	34.05123901	[shadow] ssdtshadow_win32k.sys_api_1: BF935662	
+00000005	34.05185699	[pWin32k] : BF800000	
+00000006	34.05186844	[SdtRVA] :   199280	
+00000007	34.13903046	[MapKernel] :  20E0000	
+00000008	34.13904572	[MapKernel] :  2279280	
+00000009	34.13905716	[MapKernel] : F79C1C48	
+00000010	34.13909912	[shadow] Loaded	

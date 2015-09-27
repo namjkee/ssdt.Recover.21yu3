@@ -1,0 +1,45 @@
+BUILD: Computing Include file dependencies:
+BUILD: Examining h:\路过\ressdt\shadow directory for files to compile.
+Compiling h:\路过\ressdt\shadow directory ********************
+'nmake.exe /c BUILDMSG=Stop. -i NTTEST= UMTEST= NOLINK=1 NOPASS0=1 386=1'
+cl -nologo -Ii386\ -I. -I. -Iobjfre\i386 -II:\WINDDK\2600\inc\wxp -II:\WINDDK\2600\inc\wxp -II:\WINDDK\2600\inc\ddk\wxp -II:\WINDDK\2600\inc\ddk\wdm\wxp -II:\WINDDK\2600\inc\crt -D_X86_=1 -Di386=1  -DSTD_CALL -DCONDITION_HANDLING=1   -DNT_INST=0 -DWIN32=100 -D_NT1X_=100 -DWINNT=1 -D_WIN32_WINNT=0x0501 /DWINVER=0x0501 -D_WIN32_IE=0x0600    -DWIN32_LEAN_AND_MEAN=1 -DDEVL=1 -D__BUILDMACHINE__=WinDDK -DFPO=1  -DNDEBUG -D_DLL=1      /c /Zel /Zp8 /Gy -cbstring /W3 /WX /Gz  /QIfdiv- /QIf /G6 /Gi- /Gm- /GX-  /GR- /GF  -Z7 /Oxs /Oy   -FII:\WINDDK\2600\inc\wxp\warning.h   .\shadow.c
+shadow.c
+
+Stop.
+Linking h:\路过\ressdt\shadow directory ********************
+'nmake.exe /c BUILDMSG=Stop. -i LINKONLY=1 NOPASS0=1 NTTEST= UMTEST= 386=1'
+	link -out:objfre\i386\shadow.sys -machine:ix86 @H:\TEMP\nma02504.
+Microsoft (R) Incremental Linker Version 7.00.9210
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-MERGE:_PAGE=PAGE 
+-MERGE:_TEXT=.text 
+-SECTION:INIT,d 
+-OPT:REF 
+-OPT:ICF 
+-IGNORE:4010,4037,4039,4065,4070,4078,4087,4089,4198,4221 
+-INCREMENTAL:NO 
+-FULLBUILD 
+/release 
+-NODEFAULTLIB 
+/WX 
+-debug:FULL 
+-debugtype:cv 
+-version:5.1 
+-osversion:5.1 
+/opt:nowin98 
+-STACK:0x40000,0x1000 
+-driver 
+-base:0x10000 
+-align:0x80 
+-subsystem:native,5.1 
+-entry:DriverEntry@8 
+-out:objfre\i386\shadow.sys 
+objfre\i386\shadow.obj 
+I:\WINDDK\2600\lib\wxp\i386\ntoskrnl.lib 
+I:\WINDDK\2600\lib\wxp\i386\hal.lib 
+I:\WINDDK\2600\lib\wxp\i386\wmilib.lib 
+advapihook.lib 
+Skip Binplace:
+
+Stop.

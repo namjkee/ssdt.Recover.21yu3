@@ -1,0 +1,45 @@
+BUILD: Examining d:\game\ring0\shadow directory for files to compile.
+Compiling d:\game\ring0\shadow directory ********************
+'nmake.exe /c BUILDMSG=Stop. -i NTTEST= UMTEST= NOLINK=1 386=1'
+cl -nologo -Ii386\ -I. -ID:\WINDDK\inc\mfc42 -I. -Iobjchk_wnet_x86\i386 -ID:\WINDDK\inc\wnet -ID:\WINDDK\inc\wnet -ID:\WINDDK\inc\ddk\wnet -ID:\WINDDK\inc\ddk\wdm\wnet -ID:\WINDDK\inc\crt -D_X86_=1 -Di386=1  -DSTD_CALL -DCONDITION_HANDLING=1   -DNT_INST=0 -DWIN32=100 -D_NT1X_=100 -DWINNT=1 -D_WIN32_WINNT=0x0502 /DWINVER=0x0502 -D_WIN32_IE=0x0600    -DWIN32_LEAN_AND_MEAN=1 -DDEVL=1 -DDBG=1 -D__BUILDMACHINE__=WinDDK -DFPO=0  -DNDEBUG -D_DLL=1      /c /Zel /Zp8 /Gy /Gi- /Gm- -cbstring /W3 /WX /Gz  /QIfdiv- /G6 /GX-  /GR- /GF /GS -Z7 /Od /Oi  /Oy-   -FID:\WINDDK\inc\wnet\warning.h   .\shadow.c 
+shadow.c
+
+Stop.
+Linking d:\game\ring0\shadow directory ********************
+'nmake.exe /c BUILDMSG=Stop. -i LINKONLY=1 NOPASS0=1 NTTEST= UMTEST= 386=1'
+	link -out:objchk_wnet_x86\i386\shadow.sys -machine:ix86 @C:\DOCUME~1\zjg\LOCALS~1\Temp\nm5C.tmp
+Microsoft (R) Incremental Linker Version 7.10.2179
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-MERGE:_PAGE=PAGE 
+-MERGE:_TEXT=.text 
+-SECTION:INIT,d 
+-OPT:REF 
+-OPT:ICF 
+-IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221 
+-INCREMENTAL:NO 
+-FULLBUILD 
+/release 
+-NODEFAULTLIB 
+/WX 
+-debug:FULL 
+-debugtype:cv 
+-version:5.2 
+-osversion:5.2 
+-STACK:0x40000,0x1000 
+-driver 
+-base:0x10000 
+-subsystem:native,5.02 
+-entry:GsDriverEntry@8 
+-out:objchk_wnet_x86\i386\shadow.sys 
+objchk_wnet_x86\i386\shadow.obj 
+D:\WINDDK\lib\wnet\i386\BufferOverflowK.lib 
+D:\WINDDK\lib\wnet\i386\ntoskrnl.lib 
+D:\WINDDK\lib\wnet\i386\ntoskrnl.lib 
+D:\WINDDK\lib\wnet\i386\hal.lib 
+D:\WINDDK\lib\wnet\i386\wmilib.lib 
+advapihook.lib 
+	echo Skip Binplace:
+Skip Binplace:
+
+Stop.
